@@ -34,7 +34,7 @@ php artisan passport:client --personal
 
 
 ```sh
-open http:localhost:8000/api/documentation
+open http://localhost:8000/api/documentation
 ```
 
 
