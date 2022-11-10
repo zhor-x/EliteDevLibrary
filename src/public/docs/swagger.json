@@ -20,27 +20,38 @@
                 },
                 "parameters": [
                     {
-                        "in": "body",
-                        "name": "body",
-                        "description": "",
+                        "name": "name",
+                        "in": "query",
+                        "required": false,
                         "schema": {
-                            "type": "object",
-                            "required": [
-                                "name",
-                                "email",
-                                "password"
-                            ],
-                            "properties": {
-                                "name": {
-                                    "type": "string"
-                                },
-                                "email": {
-                                    "type": "string"
-                                },
-                                "password": {
-                                    "type": "string"
-                                }
-                            }
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "email",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    },
+                    {
+                        "name": "password",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    },
+                    {
+                        "name": "password_confirmation",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
                         }
                     }
                 ]
@@ -58,23 +69,21 @@
                 },
                 "parameters": [
                     {
-                        "in": "body",
-                        "name": "body",
-                        "description": "",
+                        "name": "email",
+                        "in": "query",
+                        "required": false,
                         "schema": {
-                            "type": "object",
-                            "required": [
-                                "email",
-                                "password"
-                            ],
-                            "properties": {
-                                "email": {
-                                    "type": "string"
-                                },
-                                "password": {
-                                    "type": "string"
-                                }
-                            }
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    },
+                    {
+                        "name": "password",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
                         }
                     }
                 ]
