@@ -29,6 +29,10 @@ docker exec -it app bash
 ```
 
 ```sh
+php artisan passport:install
+```
+
+```sh
 php artisan passport:client --personal
 ```
 
